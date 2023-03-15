@@ -1,0 +1,27 @@
+#spotify {
+    background-color: #6a9dd3;
+}
+
+.head {
+    background-color: #0d3764
+}
+
+.card-spoty {
+    background-color: #34506d;
+}
+
+ul li {
+    list-style-type: none;
+    color: #fff;
+}
+
+.green {
+    color: green;
+
+}
+
+
+.f-10 {
+    font-size: 10px;
+    color: lightgray;
+}
