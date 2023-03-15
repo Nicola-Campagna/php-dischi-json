@@ -9,11 +9,17 @@ createApp({
         }
     },
 
+    methods: {
+        fetchDisco() {
+            axios.get("/php-dischi-json/API/get-list.php").then((response) => {
+                this.disco = response.data;
+                // console.log(this.disco);
+            })
+        }
+
+    },
     created() {
-        // console.log(axios);
-        axios.get("http://localhost/php-dischi-json/API/get-list.php").then((response) => {
-            this.disco = response.data;
-        })
+        this.fetchDisco()
     }
 }).mount("#app");
 

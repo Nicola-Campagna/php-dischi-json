@@ -1,12 +1,9 @@
 <?php
 
-$disco=file_get_contents(__DIR__ ."/../data/dischi.json");
+$disco=file_get_contents(__DIR__."/../data/dischi.json");
 
-header('Content-Type: application/json; charset=utf-8');
+header("Content-Type: application/json");
 
-echo $disco;
+echo ($disco);
 
 ?>
-
-
-<!-- compito di questo file è restituire una lista  -->

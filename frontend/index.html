@@ -20,8 +20,14 @@
 <body>
     <!-- sett vue js -->
     <div id="app">
-        <ul v-for="dischi in disco"></ul>
-        <li>{{dischi.title}}</li>
+        <ul v-for="dischi in disco">
+            <li>
+                <img :src="dischi.poster" alt="">
+            </li>
+            <li>{{dischi.year}}</li>
+            <li>{{dischi.title}}</li>
+            <li>{{dischi.author}}</li>
+            <li>{{dischi.genre}}</li>
         </ul>
 
     </div>
